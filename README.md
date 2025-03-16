@@ -38,7 +38,7 @@ HTML injection is type of injection issue that occurs when a user is able to con
 ### To check input reflected or not
 
 - find input and write: hello world if it reflect then use payload
-- payload: "<h1>helloworld</h1>"
+- payload: ```<h1>helloworld</h1>```
 
 ---
 
