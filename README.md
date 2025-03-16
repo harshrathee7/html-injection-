@@ -18,7 +18,7 @@ HTML injection is type of injection issue that occurs when a user is able to con
   4. steal user’s credential.
 
 
-###Example of HTML Injection
+### Example of HTML Injection
 
 ```Vulnerable Code (PHP Example)
 
