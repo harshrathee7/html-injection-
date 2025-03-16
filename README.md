@@ -27,6 +27,17 @@ HTML injection is type of injection issue that occurs when a user is able to con
     echo "<h1>Welcome, $name</h1>";
 ?>
 ```
+### Exploit
+
+- Attacker inputs:
+  ```
+  <script>alert('Hacked!');</script>
+  ```
+- Output on the page:
+  ```
+  <h1>Welcome, <script>alert('Hacked!');</script></h1>
+  ```
+This executes JavaScript when the page loads, leading to potential XSS (Cross-Site Scripting).
 ---
 
 ### how to detect html injection vulnerability ?
