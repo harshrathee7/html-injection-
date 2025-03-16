@@ -16,6 +16,7 @@ HTML injection is type of injection issue that occurs when a user is able to con
   2. DOM can be load there.
   3. attackers can perform XSS.
   4. steal user’s credential.
+  5. attacker can perform open redirection.
 
 
 ### Example of HTML Injection
