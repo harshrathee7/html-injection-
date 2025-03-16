@@ -42,10 +42,10 @@ HTML injection is type of injection issue that occurs when a user is able to con
 
 ---
 
-## ** Lab Setup for HTML Injection**
+## Lab Setup for HTML Injection
 We'll create a **vulnerable web application** using **PHP and Apache** to test HTML Injection.
 
-### ** Steps to Set Up the Lab**
+###  Steps to Set Up the Lab
 ### **1️) Install Required Tools**
 You'll need:  
 - A web server (**XAMPP** or **Apache with PHP**)  
