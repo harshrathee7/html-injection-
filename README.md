@@ -93,12 +93,12 @@ if(isset($_GET['name'])){
 1. **Start Apache** (`sudo systemctl start apache2` on Linux or XAMPP Control Panel on Windows).  
 2. **Access the page in your browser:**  
    ```
-   http://localhost/vuln_html_injection.php?name=Harsh
+   http://localhost/html_lab.php?name=Harsh
    ```
 3. **Test for Injection**  
    Try injecting HTML:
    ```
-   http://localhost/vuln_html_injection.php?name=<h1 style="color:red">Hacked!</h1>
+   http://localhost/html_lab.php?name=<h1 style="color:red">Hacked!</h1>
    ```
    **Expected Output (Vulnerable Page):**  
    ```
@@ -107,7 +107,7 @@ if(isset($_GET['name'])){
 
    Now try injecting JavaScript (which could lead to XSS):
    ```
-   http://localhost/vuln_html_injection.php?name=<script>alert('Hacked!');</script>
+   http://localhost/html_lab.php?name=<script>alert('Hacked!');</script>
    ```
 
 ---
